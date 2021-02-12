@@ -1,0 +1,10 @@
+FROM node:latest
+COPY ./frontend /opt/app
+RUN cd /opt/app \
+    # Remove package-lock.json because of a bug
+    #(https://stackoverflow.com/questions/63321707/react-npm-install-fails)
+    && rm package-lock.json \
+    && npm install --prod \
+    && npm run build
+WORKDIR /opt/app
+CMD ["npx", "serve", "-s", "build"]

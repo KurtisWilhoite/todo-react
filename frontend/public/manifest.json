@@ -1,0 +1,25 @@
+{
+  "short_name": "To-do App",
+  "name": "To-do list app project",
+  "icons": [
+    {
+      "src": "favicon.png",
+      "sizes": "24x24",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "favicon.png",
+      "type": "image/png",
+      "sizes": "24x24"
+    },
+    {
+      "src": "favicon.png",
+      "type": "image/png",
+      "sizes": "24x24"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
